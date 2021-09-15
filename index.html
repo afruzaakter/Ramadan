@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section>
+        <img src="images/bgimage.jpg" class="mosque">
+        <header>   
+       <a href="#" class="logo">Ramadan</a>
+       <div class="toggle"></div>
+       <ul class="navigation">
+           <li><a href="#" style="--i:1" >Home</a></li>
+           <li><a href="#" style="--i:2" class="active">About</a></li>
+           <li><a href="#" style="--i:3">Calendar</a></li>
+           <li><a href="#" style="--i:4">Blog</a></li>
+           <li><a href="#" style="--i:5">Contract</a></li>
+       </ul>
+        </header>
+    
+  <div class="content">
+    <div class="textBox">
+        <h1>Happy Ramadan Kareem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore libero blanditiis quis beatae voluptatum pariatur, doloremque quasi incidunt alias ea porro eaque ab dicta, voluptate voluptatibus exercitationem, facilis corporis! Beatae!</p>
+        <a href="#">Read More</a>
+     </div>
+    </div>
+    
+        <ul class="sci">
+            <li><a href="#" style="--i:10"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" style="--i:11"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" style="--i:12"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="#" style="--i:13"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+   </section>
+  
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const navigationToggle = document.querySelector('.navigation');
+    menuToggle.onclick = function(){
+        menuToggle.classList.toggle('active')
+        navigationToggle.classList.toggle('active')
+        console.log('function call');
+    }
+</script>
+</html>
